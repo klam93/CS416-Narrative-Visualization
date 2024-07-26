@@ -31,24 +31,24 @@ d3.csv("military_spending.csv").then(data => {
   let currentScene = 0;
 
   const scenes = [
-    'South Asia',
-    'Sub-Saharan Africa',
-    'Europe & Central Asia',
-    'Middle East & North Africa',
-    'Latin America & Caribbean',
     'East Asia & Pacific',
+    'South Asia',
+    'Europe & Central Asia',
+    'Sub-Saharan Africa',
+    'Middle East & North Africa',
     'North America',
+    'Latin America & Caribbean',
     'No Filter'
   ];
 
   const narratives = {
-    'South Asia': 'South Asia exhibited significant diversity in military spending among its nations. Countries like India, with its substantial military budget, contrast sharply with others in the region where spending is more restrained.',
-    'Sub-Saharan Africa': 'Sub-Saharan Africa demonstrated a range of military expenditure levels, from nations heavily investing in their defense sectors to those with minimal military budgets. This disparity highlights the region\'s varied security challenges, from internal conflicts to international peacekeeping contributions.',
-    'Europe & Central Asia': 'Europe & Central Asia showed a complex pattern of military expenditure. Western European countries generally have higher budgets due to their advanced defense technologies and commitments to NATO. In contrast, some Central Asian nations allocate more modest budgets.',
-    'Middle East & North Africa': 'The Middle East & North Africa region had some of the highest military expenditures globally. The substantial spending by countries such as Saudi Arabia and Egypt reflects ongoing regional conflicts and security concerns.',
-    'Latin America & Caribbean': 'Latin America & the Caribbean exhibited a more moderate range of military spending compared to other regions. Countries in the region prioritize military expenditure differently, often focusing on internal security and border protection.',
     'East Asia & Pacific': 'East Asia & Pacific showed varied military spending, with substantial investments from countries like China and Japan. China\'s significant expenditure underscores its growing geopolitical influence and modernization of its military forces.',
+    'South Asia': 'South Asia exhibited significant diversity in military spending among its nations. Countries like India, with its substantial military budget, contrast sharply with others in the region where spending is more restrained.',
+    'Europe & Central Asia': 'Europe & Central Asia showed a complex pattern of military expenditure. Western European countries generally have higher budgets due to their advanced defense technologies and commitments to NATO. In contrast, some Central Asian nations allocate more modest budgets.',
+    'Sub-Saharan Africa': 'Sub-Saharan Africa demonstrated a range of military expenditure levels, from nations heavily investing in their defense sectors to those with minimal military budgets. This disparity highlights the region\'s varied security challenges, from internal conflicts to international peacekeeping contributions.',
+    'Middle East & North Africa': 'The Middle East & North Africa region had some of the highest military expenditures globally. The substantial spending by countries such as Saudi Arabia and Egypt reflects ongoing regional conflicts and security concerns.',
     'North America': 'North America, particularly the United States, exhibited high military spending, reflecting its global defense commitments and advanced technological capabilities. The U.S. continues to lead in defense expenditure, driven by its extensive military engagements and strategic interests worldwide.',
+    'Latin America & Caribbean': 'Latin America & the Caribbean exhibited a more moderate range of military spending compared to other regions. Countries in the region prioritize military expenditure differently, often focusing on internal security and border protection.',
     'No Filter': ''
   };
 
