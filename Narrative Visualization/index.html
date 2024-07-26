@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS416 Narrative Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .tooltip {
+            position: absolute;
+            background: white;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    </style>
+</head>
+<body>
+	<div class="introduction">
+        <h2>Military Expenditure vs. GDP by Country</h2>
+        <p>
+            This visualization explores the relationship between a country's GDP and its military expenditure as a percentage of GDP. The data spans from 1960 to 2022, allowing for a historical comparison of military spending trends across different regions and countries. 
+        </p>
+        <p>
+            The circles represent individual countries, colored by their respective regions. Hover over a circle to see detailed information about the country, including its GDP and military expenditure.
+        </p>
+        <p>
+        	At the end of the overview, you can use the slider to select a specific year or click on a region to explore the data for that particular grouping.
+        </p>
+    </div>
+    <div>
+    <button id="previousButton">Previous</button>
+    <button id="nextButton">Next</button>
+    <button id="startOverButton">Start Over</button>
+	</div>
+	<div><p></p></div>
+    <div>
+        <label for="yearSlider">Year:</label>
+        <input type="range" id="yearSlider" min="1960" max="2022" value="2022" step="1" />
+        <span id="yearLabel">2022</span>
+    </div>
+    <svg></svg>
+    <script src="app.js"></script>
+</body>
+</html>
