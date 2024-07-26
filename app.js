@@ -275,8 +275,10 @@ d3.csv("military_spending.csv").then(data => {
 
   document.getElementById('startOverButton').addEventListener('click', () => {
     currentScene = 0;
-    yearLabel.text(2021);
+    document.getElementById('yearSlider').value = 2021;
+    document.getElementById('yearLabel').textContent = 2021;
     updateScene(currentScene);
+    updateVisualization(2021);
   });
 
   const slider = d3.select("#yearSlider");
